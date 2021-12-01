@@ -1,0 +1,70 @@
+.fipe .header {
+    height: 12rem;
+    background-color: goldenrod;
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    box-shadow: 1px 0.2px 2px gray;
+}
+
+.fipe .header h2 {
+    color: whitesmoke;
+}
+
+.brands label,
+.model label,
+.year label {
+    display: block;
+    margin-top: 1.4rem;
+}
+
+.brands select,
+.model select,
+.year select {
+    width: 27rem;
+    height: 2rem;
+
+    background: none;
+}
+
+i {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.btn-get-info {
+    border: none;
+    width: 27rem;
+    height: 2rem;
+    margin-top: 1.4rem;
+    border-radius: 1.4rem;
+    box-shadow: 0.2px 0.2px 2px black;
+    background-color: goldenrod;
+    cursor: pointer;
+    color: whitesmoke;
+    transform: scale(0.99);
+
+    transition: all 400ms;
+}
+
+.btn-get-info:hover {
+    transform: scale(1);
+}
+
+.footer {
+    margin-top: 4rem;
+}
+
+.footer footer {
+    text-align: left;
+}
+
+.footer footer span {
+    padding: 0.4rem;
+    margin: 0;
+    font-size: 0.7rem;
+}
