@@ -49,6 +49,7 @@ const MyComponent = () => {
         })
         .catch(error => {
             console.log('ERROR: ', error)
+            alert('Há algo errado. Tente novamente')
         })
     }
 
@@ -64,6 +65,7 @@ const MyComponent = () => {
         })
         .catch(error => {
             console.log('ERROR: ', error)
+            alert('Há algo errado. Tente novamente')
         })
     }
 
@@ -82,6 +84,7 @@ const MyComponent = () => {
         })
         .catch(error => {
             console.log('ERROR: ', error)
+            alert('Há algo errado. Certifique-se de ter preenchido todos os campos')
         })
 
         setModalIsOpen(true);
@@ -100,6 +103,7 @@ const MyComponent = () => {
             <div className="brands">
                 <label htmlFor="cars-brands">Escolha uma <i>marca:</i> </label>
                 <select name="cars" id="cars-brands" onChange={handleChooseModel} >
+                    <option value="0">...</option>
                     { brands.map(brand => (
                         <option key={brand.codigo} value={brand.codigo}>{brand.nome}</option>
                     )) }
@@ -109,6 +113,7 @@ const MyComponent = () => {
             <div className="model">
                 <label htmlFor="cars-model">Escolha um <i>modelo:</i></label>
                 <select name="cars" id="cars-model" onChange={handleChooseYear} >
+                    <option value="0">...</option>
                     { models.map(model => (
                         <option key={model.codigo} value={model.codigo}>{model.nome}</option>
                     )) }
@@ -119,6 +124,7 @@ const MyComponent = () => {
             <div className="year">
                 <label htmlFor="cars-year">Escolha o <i>ano</i> do carro:</label>
                 <select name="cars" id="cars-year" onChange={handleSaveYear}>
+                    <option value="0">...</option>
                     { years.map(year => (
                         <option key={year.codigo} value={year.codigo}>{year.nome}</option>
                     )) }
